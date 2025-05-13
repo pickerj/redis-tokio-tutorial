@@ -8,7 +8,7 @@ This repo tracks progress through the "Mini-Redis" tutorial for Tokio, available
 ## Progress
 
 - [x] Setup
-- [ ] Hello Tokio
+- [x] Hello Tokio
 - [ ] Spawning
 - [ ] Shared state
 - [ ] Channels
