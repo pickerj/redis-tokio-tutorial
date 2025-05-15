@@ -1,5 +1,5 @@
-use tokio::net::{TcpListener, TcpStream};
 use mini_redis::{Connection, Frame};
+use tokio::net::{TcpListener, TcpStream};
 
 #[tokio::main]
 async fn main() {
@@ -8,7 +8,11 @@ async fn main() {
     loop {
         // `accept` returns 1) a `TcpStream` and 2) the IP and port of the new connection
         let (socket, _) = listener.accept().await.unwrap();
-        process(socket).await;
+        // Spawn a new task for each inbound socket.
+        // By using the `move` keyword, the socket is moved to the new task and processed there.
+        tokio::spawn(async move {
+            process(socket).await;
+        });
     }
 }
 
