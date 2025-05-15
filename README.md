@@ -10,7 +10,7 @@ This repo tracks progress through the "Mini-Redis" tutorial for Tokio, available
 - [x] Setup
 - [x] Hello Tokio
 - [x] Spawning
-- [ ] Shared state
+- [x] Shared state
 - [ ] Channels
 - [ ] I/O
 - [ ] Framing
