@@ -13,7 +13,7 @@ This repo tracks progress through the "Mini-Redis" tutorial for Tokio, available
 - [x] Shared state
 - [x] Channels
 - [x] I/O
-- [ ] Framing
+- [x] Framing
 - [ ] Async in depth
 - [ ] Select
 - [ ] Streams
